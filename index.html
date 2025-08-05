@@ -1,0 +1,157 @@
+WebsiteVies with foto
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vie's Catering</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffdf7;
+      color: #333;
+    }
+
+    header {
+      background: url('Header.png') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    header img.logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 80px;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      color: white;
+      background: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 2em;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-bottom: 3px solid #f4a261;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .service-card p {
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .contact {
+      line-height: 1.8;
+    }
+
+    .contact a {
+      color: #2a9d8f;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #2a9d8f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Foto Logo Vies.jpg" alt="Logo Vie's Catering" class="logo">
+    <h1>Vie's Catering</h1>
+  </header>
+
+  <div class="container">
+
+    <section class="section">
+      <h2>Tentang Kami</h2>
+      <p>Vie's Catering berdiri sejak tahun 2016 di Tirisan, Makamhaji, Kartasura, Sukoharjo, Jawa Tengah. Kami melayani berbagai kebutuhan konsumsi untuk acara keluarga, hajatan, instansi, dan lainnya dengan cita rasa khas dan pelayanan terbaik.</p>
+    </section>
+
+    <section class="section">
+      <h2>Layanan Kami</h2>
+      <div class="services">
+        <div class="service-card">
+          <img src="nasi-box.jpg" alt="Nasi Box">
+          <p>Pembuatan Nasi Box</p>
+        </div>
+        <div class="service-card">
+          <img src="snack-box.jpg" alt="Snack Box">
+          <p>Snack Box</p>
+        </div>
+        <div class="service-card">
+          <img src="gudeg.jpg" alt="Gudeg Besek">
+          <p>Gudeg Besek</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Hubungi Kami</h2>
+      <div class="contact">
+        <p><strong>Alamat:</strong> Tirisan, RT 04/23, Makamhaji, Kartasura, Sukoharjo, Jawa Tengah</p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/6281904567368" target="_blank">Klik untuk Chat</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/viescatering" target="_blank">@viescatering</a></p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Vie's Catering. All rights reserved.
+  </footer>
+
+</body>
+</html>
